@@ -1,0 +1,92 @@
+.post-it {
+    background-color: #fffa87;
+    width: 150px; 
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    transition: transform 0.2s ease-in-out; 
+  }
+  
+  /* Variaciones en la inclinación */
+  .post-it:nth-child(4n+1) {
+    transform: rotate(-5deg); 
+    transform-origin: top left;
+  }
+  .post-it:nth-child(4n+2) {
+    transform: rotate(5deg); /* Rotación hacia la derecha */
+    transform-origin: top right;
+  }
+  .post-it:nth-child(4n+3) {
+    transform: rotate(-3deg); /* Rotación leve hacia la izquierda */
+    transform-origin: bottom left;
+  }
+  .post-it:nth-child(4n+4) {
+    transform: rotate(3deg); 
+    transform-origin: bottom right;
+  }
+  
+  .post-it-importante {
+    background-color: #ff9999; /* notas importantes */
+  }
+  
+  .post-it h3 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-style: italic; /* Estilo cursivo */
+    color: #333;
+  }
+  
+  .post-it p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    font-style: italic; 
+    color: #666;
+  }
+  
+  .btn-eliminar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff4d4d; 
+    border: none;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px;
+  }
+  body {
+    background-color:#FEF9E7 ;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  .App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .App h1 {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  
+  
+  
+  
+  
+  
